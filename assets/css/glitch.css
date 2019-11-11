@@ -19,7 +19,7 @@
 
 	  animation: glitch-anim 1s infinite linear alternate-reverse;
 	}
-	.glitch::after {
+	.glitch::after, .snip1566::after {
 	  content: attr(data-text);
 	  position: absolute;
 
