@@ -1861,15 +1861,15 @@ border: 2px solid #fff;
   color: orange;
 }
 
+@media screen and (min-width: 1280px) {
+	.sola_yatir {
+		width:50%; padding-right:10px;  float:left;
+	}
 
-.sola_yatir {
-	width:50%; padding-right:10px;  float:left;
+	.saga_yatir {
+		width:50%; padding-left:10px;  float:right;
+	}
 }
-
-.saga_yatir {
-	width:50%; padding-left:10px;  float:right;
-}
-
 
 .section_center {
 	width:75%; 
