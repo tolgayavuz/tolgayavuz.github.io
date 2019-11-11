@@ -130,18 +130,12 @@
 		@media screen and (max-width: 736px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 10pt;
 			}
 
 		}
 
-		@media screen and (max-width: 480px) {
-
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-
-		}
+		
 
 	a {
 		text-decoration: underline;
@@ -1624,8 +1618,8 @@
 		
 		/* Sana da merhaba kardeş */
 		#helloworld {
-		font-family: 'VT323', monospace;
-		font-size: 1.3em;
+			font-family: 'VT323', monospace;
+			font-size: 1.3em;
 		}
 		
 		.social-media-links a 
