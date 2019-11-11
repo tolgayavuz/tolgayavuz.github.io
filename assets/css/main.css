@@ -1533,7 +1533,7 @@
 
 		#banner a {
 			color: #FFF;
-			text-decoration: none;
+			text-decoration: underline;
 		}
 
 		@media screen and (max-width: 1280px) {
