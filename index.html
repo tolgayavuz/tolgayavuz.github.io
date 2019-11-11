@@ -11,7 +11,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<div class="page-wrap">
+	<div id="loading"> </div>
+		<div id="page" class="page-wrap">
 			<!-- Nav
 				<nav id="nav">
 					<ul>
@@ -286,5 +287,11 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<script>
+			$(window).load(function(){
+			   $('#loading').delay(500).fadeOut();
+			});
+			</script>
 	</body>
 </html>
