@@ -1649,7 +1649,12 @@
 		#helloworld {
 			font-family: 'VT323', monospace;
 			font-size: 1.3em;
-			animation:helloworld_size 2s;
+			
+			-webkit-animation: helloworld_size 2s; /* Safari, Chrome and Opera > 12.1 */
+			-moz-animation: helloworld_size 2s; /* Firefox < 16 */
+			-ms-animation: helloworld_size 2s; /* Internet Explorer */
+			-o-animation: helloworld_size 2s; /* Opera < 12.1 */
+			animation: helloworld_size 2s;
 		}
 		
 		.social-media-links a 
