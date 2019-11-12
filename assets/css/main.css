@@ -1461,7 +1461,7 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		min-height: 467.25px;
+		min-height: 490px;
 		height: 75vh;
 		position: relative;
 		
@@ -1806,7 +1806,7 @@ border: 2px solid #fff;
 		height: 100vh;
 	}
 	100% { 
-		min-height: 75vh;
+		min-height: 490px;
 		height: 75vh;
 	}
 }
