@@ -1873,11 +1873,14 @@ border: 2px solid #fff;
 
 @media screen and (min-width: 1280px) {
 	.sola_yatir {
-		width:50%; padding-right:10px;  float:left;
+		width:50%; padding-right:15px;  float:left;
 	}
 
 	.saga_yatir {
-		width:50%; padding-left:10px;  float:right;
+		width:50%; padding-left:15px;  float:right;
+		height:100%;
+		display: inline-block;
+		border-left:2px dotted #ccc;
 	}
 }
 
@@ -1948,7 +1951,6 @@ border: 2px solid #fff;
     color: #fff;
     top: 5px;
 }
-
 
 
 
