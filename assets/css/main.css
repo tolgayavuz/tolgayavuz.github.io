@@ -1474,8 +1474,12 @@
 		text-align: center;
 		color: #FFF;
 		
-		-o-animation: BG_CHANGE 5s ease; 
-		animation: BG_CHANGE 5s ease, resize-banner 3s ease; 
+		
+		-webkit-animation: resize-banner 3s ease; /* Safari, Chrome and Opera > 12.1 */
+		-moz-animation: resize-banner 3s ease; /* Firefox < 16 */
+		-ms-animation: resize-banner 3s ease; /* Internet Explorer */
+		-o-animation: resize-banner 3s ease; /* Opera < 12.1 */
+		animation: resize-banner 3s ease;
 		
 		
 		-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.33);
@@ -1484,10 +1488,10 @@
 	}
 
 		#banner:before {
-			-moz-transition: opacity 3s ease;
-			-webkit-transition: opacity 3s ease;
-			-ms-transition: opacity 3s ease;
-			transition: opacity 3s ease;
+			-moz-transition: all 3s ease;
+			-webkit-transition: all 3s ease;
+			-ms-transition: all 3s ease;
+			transition: all 3s ease;
 			-moz-transition-delay: 0.25s;
 			-webkit-transition-delay: 0.25s;
 			-ms-transition-delay: 0.25s;
@@ -1506,6 +1510,7 @@
 		}
 	
 		#banner .inner {
+			
 			-moz-transform: none;
 			-webkit-transform: none;
 			-ms-transform: none;
@@ -1796,16 +1801,40 @@ border: 2px solid #fff;
     100% { font-size: 1.3em; }
 }
 
+
 @keyframes resize-banner {
 	0% { 
+	
+		background:#000;
+	
+	
 		min-height: 100vh;
 		height: 100vh;
 	}
 	75% { 
+	
+		background:#000;
+	
 		min-height: 100vh;
 		height: 100vh;
 	}
+	90% {
+		background:#000;
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: bottom;
+	}
 	100% { 
+	
+		background: linear-gradient(rgba(10, 10, 10, 0.2), rgba(0, 0, 0, 0.3)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url(../../images/banner2.jpg);
+		
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: bottom;
+	
+	
 		min-height: 490px;
 		height: 75vh;
 	}
@@ -1815,43 +1844,6 @@ border: 2px solid #fff;
 
 
 
-@-webkit-keyframes BG_CHANGE {
-  from {
-		background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), repeating-linear-gradient(0, transparent, transparent 2px, rgba(0, 115, 0, 0.9) 3px, rgba(0, 115, 0, 0.9) 3px), url(none);
-		
-		background-size: cover;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-position: bottom;
-  }
-  to {
-		background: linear-gradient(rgba(10, 10, 10, 0.2), rgba(0, 0, 0, 0.3)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url(../../images/banner2.jpg);
-		
-		background-size: cover;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-position: bottom;
-  }
-}
-
-@keyframes BG_CHANGE {
-  from {
-		background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), repeating-linear-gradient(0, transparent, transparent 2px, rgba(0, 115, 0, 0.9) 3px, rgba(0, 115, 0, 0.9) 3px), url(none);
-		
-		background-size: cover;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-position: bottom;
-  }
-  to {
-		background: linear-gradient(rgba(10, 10, 10, 0.2), rgba(0, 0, 0, 0.3)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url((../../images/banner2.jpg);
-		
-		background-size: cover;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-position: bottom;
-  }
-}
 
 .stars {
 	float:right;
