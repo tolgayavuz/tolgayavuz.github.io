@@ -1474,8 +1474,12 @@
 		text-align: center;
 		color: #FFF;
 		
-		-o-animation: BG_CHANGE 5s ease; 
-		animation: BG_CHANGE 5s ease, resize-banner 3s ease; 
+		
+		-webkit-animation: BG_CHANGE 5s ease, resize-banner 3s ease; /* Safari, Chrome and Opera > 12.1 */
+		-moz-animation: BG_CHANGE 5s ease, resize-banner 3s ease; /* Firefox < 16 */
+		-ms-animation: BG_CHANGE 5s ease, resize-banner 3s ease; /* Internet Explorer */
+		-o-animation: BG_CHANGE 5s ease, resize-banner 3s ease; /* Opera < 12.1 */
+		animation: BG_CHANGE 5s ease, resize-banner 3s ease;
 		
 		
 		-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.33);
