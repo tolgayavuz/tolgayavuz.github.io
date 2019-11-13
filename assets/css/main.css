@@ -1461,7 +1461,7 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		min-height: 490px;
+		min-height: 510px;
 		height: 75vh;
 		position: relative;
 		
@@ -1815,7 +1815,7 @@ border: 2px solid #fff;
 		height: 100vh;
 	}
 	100% { 
-		min-height: 490px;
+		min-height: 510px;
 		height: 75vh;
 	}
 }
@@ -1953,8 +1953,45 @@ border: 2px solid #fff;
 }
 
 
+.nav-bar
+{
+	text-align: center;
+}
 
+.nav-bar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: inline-table;
+}
 
+.nav-bar li {
+	float: left;
+	padding:40px 20px 0px 20px;
+  
+}
+
+.nav-bar li a {
+	display: inline-block;
+	color: black;
+	text-align: center;
+	font-weight:bold;
+	text-decoration: none;
+	
+	border-bottom:rgba(0,0,0,0) 3px solid;
+	
+	letter-spacing: normal;
+	
+	transition:letter-spacing 1s;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav-bar li a:hover {
+	color:#0d1c3b;
+	border-bottom:#0d1c3b 3px solid;
+    letter-spacing: 0.1em;
+}
 
 
 
