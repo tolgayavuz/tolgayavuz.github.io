@@ -1956,6 +1956,7 @@ border: 2px solid #fff;
 .nav-bar
 {
 	text-align: center;
+	overflow: hidden;
 }
 
 .nav-bar ul {
@@ -1968,7 +1969,7 @@ border: 2px solid #fff;
 
 .nav-bar li {
 	float: left;
-	padding:40px 20px 0px 20px;
+	
   
 }
 
@@ -1983,11 +1984,16 @@ border: 2px solid #fff;
 	
 	letter-spacing: normal;
 	
-	transition:letter-spacing 1s;
+	padding:40px 20px 0px 20px;
+	
+	transition:letter-spacing .5s, padding .5s;
 }
 
 /* Change the link color to #111 (black) on hover */
 .nav-bar li a:hover {
+	
+	padding:40px 7px 0px 7px;
+	
 	color:#0d1c3b;
 	border-bottom:#0d1c3b 3px solid;
     letter-spacing: 0.1em;
