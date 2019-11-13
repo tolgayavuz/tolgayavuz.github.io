@@ -1984,7 +1984,7 @@ border: 2px solid #fff;
 	
 	letter-spacing: normal;
 	
-	padding:40px 20px 0px 20px;
+	padding:40px 1em 0px 1em;
 	
 	transition:letter-spacing .5s, padding .5s;
 }
@@ -1992,7 +1992,7 @@ border: 2px solid #fff;
 /* Change the link color to #111 (black) on hover */
 .nav-bar li a:hover {
 	
-	padding:40px 7px 0px 7px;
+	padding:40px 0.3em 0px 0.3em;
 	
 	color:#0d1c3b;
 	border-bottom:#0d1c3b 3px solid;
