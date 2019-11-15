@@ -1956,6 +1956,7 @@ border: 2px solid #fff;
 .nav-bar
 {
 	text-align: center;
+	margin-bottom: -25px;
 }
 
 .nav-bar ul {
@@ -1969,6 +1970,7 @@ border: 2px solid #fff;
 .nav-bar li {
 	float: left;
 }
+
 
 .nav-bar li a {
 	display: inline-block;
@@ -1997,11 +1999,15 @@ border: 2px solid #fff;
 }
 
 @media screen and (max-width: 1280px) {
+	
+	.nav-bar li i {
+		width:100%;
+	}
 	.nav-bar li a {
-		padding:40px 0.75em 0px 0.75em;
+		padding:40px 0.5em 0px 0.5em;
 	}
 	.nav-bar li a:hover {
-		padding:40px 0.75em 0px 0.75em;
+		padding:40px 0.5em 0px 0.5em;
 		letter-spacing: normal;
 	}
 }
