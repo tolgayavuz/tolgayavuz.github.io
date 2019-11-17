@@ -359,13 +359,15 @@
 			
 			$('.nav-bar ul li a').on('click', function (e) {
 			   var targetSec = $(this).attr("data-text");
+			   e.preventDefault();
 			   $('html, body').animate({
-				  scrollTop: $('#' + targetSec).offset().top
+				  scrollTop: $('#' + targetSec).offset().top + (-40)
 			   }, 1000);
 			});
 			
 
 			$(window).scroll(function() {
+			e.preventDefault();
 				if ($(this).scrollTop() >= 50) {        
 					$('#return-to-top').fadeIn(200);    
 				} else {
