@@ -314,18 +314,16 @@
 							<hr>
 						</div>
 						
-						<section style="background:#000; width:100%; overflow:hidden;">
+						<section class="_footer">
 							<div align="center">
 							<br>
 								<header align="center" style="margin-top:-4px;">
 									<h2 align="center" class="glitch" data-text="Contact" style="color:#fff; font-size:2em;">Contact</h2>
 								</header>
 								
-								<a href="mailto:itstolga@gmail.com" style="text-decoration:none;"><img height="24" style="margin-bottom:-8px; padding-right:3px;" src="images/social_media/mail.png"/> itstolga@gmail.com</a>
+								<p><a style="color:#fff;" href="mailto:itstolga@gmail.com"><i class="far fa-envelope" style="margin-right:7px;"></i>itstolga@gmail.com</a></p>
 								
-								<br><br>
-								
-								<div class="social-media-links">
+								<div class="social-media-links" style="animation:none;">
 										<a alt="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/tolga-yavuz/"><i class="fab fa-linkedin-in"></i></a>
 										<a alt="My Spotify Artist Page" target="_blank" href="https://open.spotify.com/artist/1xXMfFUFQVjbLLYLk5Rpq6"><i class="fab fa-spotify"></i></a>
 										<a alt="My SoundCloud Artist Page" target="_blank" href="https://soundcloud.com/totevanb"><i class="fab fa-soundcloud"></i></a>
@@ -334,7 +332,6 @@
 										<a alt="My DeviantArt Page" target="_blank" href="https://wickeddogg.deviantart.com/"><i class="fab fa-deviantart"></i></a>
 										<span class="stretch"></span>
 								</div>
-								<br>
 							</div>
 						</section>
 					<div>
@@ -351,6 +348,9 @@
 			<script src="assets/js/main.js"></script>
 			
 			<script>
+			
+			
+			
 			$(window).load(function(){
 			   $('#loading').delay(500).fadeOut();
 			});
@@ -365,6 +365,7 @@
 			   }, 1000);
 			});
 			
+			var distance = $('.nav-bar').offset().top - $('.nav-bar').height()*2; 
 
 			$(window).scroll(function() {
 				if ($(this).scrollTop() >= 50) {        
@@ -372,6 +373,13 @@
 				} else {
 					$('#return-to-top').fadeOut(200);   
 				}
+				
+				/*if ($(this).scrollTop() >= distance) {        
+					$('.nav-bar').addClass("affix");
+				} else {
+					$('.nav-bar').removeClass("affix");
+				}*/
+				
 			});
 			
 			$('#return-to-top').click(function() {      
