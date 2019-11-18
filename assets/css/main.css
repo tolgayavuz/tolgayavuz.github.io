@@ -2109,6 +2109,11 @@ border: 2px solid #fff;
 		padding:40px 0.5em 0px 0.5em;
 		letter-spacing: normal;
 	}
+	
+	#banner p
+	{
+		font-size:1em;
+	}
 }
 
 ._footer
