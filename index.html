@@ -28,7 +28,7 @@
 	</head>
 	<body>
 	<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-	<div id="loading"> </div>
+	<div id="loading" align="center"><img src="images/loading.gif"/></i></div>
 		<div id="page" class="page-wrap" style="background:none;">
 			<!-- Nav
 				<nav id="nav">
@@ -358,11 +358,22 @@
 			
 			<script>
 			
+			document.onreadystatechange = function () {
+			  var state = document.readyState
+			  if (state == 'interactive') {
+				   document.getElementById('body').style.visibility="hidden";
+			  } else if (state == 'complete') {
+				  setTimeout(function(){
+					 document.getElementById('interactive');
+					 document.getElementById('loading').style.visibility="hidden";
+					 document.getElementById('body').style.visibility="visible";
+				  },1000);
+			  }
+			}
 			
-			
-			$(window).load(function(){
-			   $('#loading').delay(500).fadeOut();
-			});
+			/*$(window).load(function(){
+			   $('#loading').delay(1000).fadeOut();
+			});*/
 			
 			
 			
