@@ -2165,3 +2165,18 @@ border: 2px solid #fff;
         transform:rotate(360deg);
     }
 }
+
+
+.music_area
+{
+	background:#000 url(https://images.pexels.com/photos/63703/pexels-photo-63703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) fixed center; width: 100%;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.33);
+	-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.33);
+	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.33);
+}
+
+.music_area2
+{
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: 25px;
+}
