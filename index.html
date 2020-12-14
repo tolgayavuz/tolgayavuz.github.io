@@ -89,12 +89,12 @@
                         <figcaption><img src="images/itisAlsoMe.gif" alt="sq-sample14" /></figcaption>
                     </figure><br>
 
-                    <span id="helloworld">Hello, World!</span>
-                    <h1>I'm <span class="glitch" data-text="Tolga Yavuz">Tolga Yavuz</span></h1>
-                    <p><b class="glitch" data-text="Software Engineering">Software Engineering</b> student at <a target="_blank" href="https://www.ieu.edu.tr/tr">Izmir University of Economics</a> in Turkey.</br>
-                        <b class="glitch" data-text="Software Support Specialist">Software Support Specialist</b> in <a target="_blank" href="https://www.minervaprotechnology.com/">Minerva Protechnology</a>.</br>
-                        <b class="glitch" data-text="Music Producer">Music Producer</b> &
-                        <b class="glitch" data-text="Painter">Painter</b> in spare time.</p>
+                    <span id="helloworld">Hello, World!</span><div class='console-underscore' id='console'>&#95;</div>
+                    <h1>I'm <span class="glitch" id="tolga_yavuz" data-text="Tolga Yavuz">Tolga Yavuz</span></h1>
+                    <p><b class="glitch" data-text="Software Engineering" id="software_engineering">Software Engineering</b> student at <a target="_blank" href="https://www.ieu.edu.tr/tr">Izmir University of Economics</a> in Turkey.</br>
+                        <b class="glitch" data-text="Software Support Specialist" id="job_title">Software Support Specialist</b> in <a target="_blank" href="https://www.minervaprotechnology.com/">Minerva Protechnology</a>.</br>
+                        <b class="glitch" data-text="Music Producer" id="music_producer">Music Producer</b> &
+                        <b class="glitch" data-text="Painter" id="painter">Painter</b> in spare time.</p>
                     <p><a href="mailto:itstolga@gmail.com"><i class="far fa-envelope" style="margin-right:7px;"></i>itstolga@gmail.com</a></p>
 
                     <div class="social-media-links make_childs_center">
@@ -168,7 +168,7 @@
                     <div class="sola_yatir">
                         <ul>
                             <li>
-                                <b>JAVA / Android</b>
+                                <b>JAVA</b>
                                 <div class="stars">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -195,7 +195,7 @@
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star half-checked"></span>
                                     <span class="fa fa-star"></span>
                                 </div>
                             </li>
@@ -264,9 +264,31 @@
                                 <b>Flutter</b> (Just Started to learn)
                                 <div class="stars">
                                     <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star half-checked"></span>
                                     <span class="fa fa-star"></span>
                                     <span class="fa fa-star"></span>
                                     <span class="fa fa-star"></span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <b>React-Native</b> (Just Started to learn)
+                                <div class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star half-checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <b>Javascript</b>
+                                <div class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star half-checked"></span>
                                     <span class="fa fa-star"></span>
                                 </div>
                             </li>
@@ -290,7 +312,7 @@
                 </div>
                 <div class="projects">
 
-                    <div id="project-grid" style="background-image: url(https://www.minervaprotechnology.com/Content/TesterUrunler/CSI/CSI_RESIM_5.jpg); background-position: center; background-size: 150% auto;">
+                    <div id="project-grid" style="background-image: url(https://www.minervaprotechnology.com/Content/TesterUrunler/CSI/CSI_RESIM_5.jpg); background-position: center; background-size: cover;">
                         <div id="outer-background" style="background: rgba(0, 0, 0, 0.5) url(https://www.minervaprotechnology.com/Content/braincraft_Logo_v2_150x150.png) no-repeat center;">
                             <div id="details">
                                 BRAINCRAFT is an application that includes brain training exercises designed with international researchers.
@@ -300,8 +322,8 @@
                                     <a href="https://apps.apple.com/tr/app/braincraft/id1436493328" target="_blank"><i class="fab fa-app-store"></i></a>
                                 </div>
                                 <div id="bottom_"> C# - Unity3D - API </div>
-                                
-                        <div class="ribbon"><span>still developing</span></div>
+
+                                <div class="ribbon"><span>still developing</span></div>
                             </div>
                         </div>
                     </div>
@@ -347,7 +369,7 @@
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star half-checked"></span>
                                     <span class="fa fa-star"></span>
                                 </div>
                             </li>
@@ -466,14 +488,31 @@
                     document.getElementById('interactive');
                     document.getElementById('loading').style.visibility = "hidden";
                     document.getElementById('body').style.visibility = "visible";
+
                 }, 1000);
+
+                consoleText(['Hello, World!'], 'helloworld', ['white']);
+                /*setTimeout(function() {
+                    consoleText(['Tolga Yavuz'], 'tolga_yavuz', ['white']);
+                }, 1500);
+
+                setTimeout(function() {
+                    consoleText(['Software Engineering'], 'software_engineering', ['white']);
+                }, 1500);
+
+                setTimeout(function() {
+                    consoleText(['Software Support Specialist'], 'job_title', ['white']);
+                }, 1500);
+
+                setTimeout(function() {
+                    consoleText(['Music Producer'], 'music_producer', ['white']);
+                }, 1500);
+
+                setTimeout(function() {
+                    consoleText([' Painter'], 'painter', ['white']);
+                }, 1500);*/
             }
         }
-
-        /*$(window).load(function(){
-           $('#loading').delay(1000).fadeOut();
-        });*/
-
 
         $('.nav-bar ul li a').on('click', function(e) {
             var targetSec = $(this).attr("data-text");
@@ -491,13 +530,6 @@
             } else {
                 $('#return-to-top').fadeOut(200);
             }
-
-            /*if ($(this).scrollTop() >= distance) {        
-            	$('.nav-bar').addClass("affix");
-            } else {
-            	$('.nav-bar').removeClass("affix");
-            }*/
-
         });
 
         $('#return-to-top').click(function() {
@@ -506,17 +538,40 @@
             }, 500);
         });
 
-        /*$(document).ready(function(){
 
-          $(".social-media-links i").hover(function(){
 
-        	  $( this ).addClass("fa-spin");
-          }, function () {
-        	  $( this ).removeClass("fa-spin");
-          });
 
-        });*/
+        function consoleText(words, id, colors) {
+            if (colors === undefined) colors = ['#fff'];
+            var visible = true;
+            var letterCount = 1;
+            var x = 1;
+            var waiting = false;
+            var target = document.getElementById(id)
+            target.setAttribute('style', 'color:' + colors[0])
+            window.setInterval(function() {
+
+                if (letterCount === 0 && waiting === false) {
+                    waiting = true;
+                    target.innerHTML = words[0].substring(0, letterCount)
+                    window.setTimeout(function() {
+                        var usedColor = colors.shift();
+                        colors.push(usedColor);
+                        var usedWord = words.shift();
+                        words.push(usedWord);
+                        x = 1;
+                        target.setAttribute('style', 'color:' + colors[0])
+                        letterCount += x;
+                        waiting = false;
+                    }, 1000)
+                } else if (waiting === false) {
+                    target.innerHTML = words[0].substring(0, letterCount)
+                    letterCount += x;
+                }
+            }, 120)
+        }
     </script>
 </body>
+
 
 </html>
