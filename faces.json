@@ -1,0 +1,83 @@
+[
+  {
+    "id": "face_001",
+    "name": "Neon Clock",
+    "description": "A glowing neon digital clock with subtle pulsing effect.",
+    "previewImage": "https://cdn.example.com/previews/neon.png",
+    "faceDefinition": {
+      "backgroundColor": "#000000",
+      "elements": [
+        {
+          "type": "clock",
+          "format": "HH:mm",
+          "font": "monospace",
+          "color": "#00ffff",
+          "position": { "x": 0.5, "y": 0.4 },
+          "animation": "pulse"
+        },
+        {
+          "type": "text",
+          "value": "Neon",
+          "font": "Futura",
+          "color": "#00ffff",
+          "position": { "x": 0.5, "y": 0.75 },
+          "animation": "fade"
+        }
+      ]
+    }
+  },
+  {
+    "id": "face_002",
+    "name": "Minimal Analog",
+    "description": "Elegant analog face with subtle motion and clean design.",
+    "previewImage": "https://cdn.example.com/previews/minimal.png",
+    "faceDefinition": {
+      "backgroundColor": "#111111",
+      "elements": [
+        {
+          "type": "analogClock",
+          "hands": {
+            "hourColor": "#ffffff",
+            "minuteColor": "#cccccc",
+            "secondColor": "#ff0000"
+          },
+          "center": { "x": 0.5, "y": 0.5 },
+          "radius": 100
+        },
+        {
+          "type": "text",
+          "value": "Minimal",
+          "font": "Helvetica Neue",
+          "color": "#ffffff",
+          "position": { "x": 0.5, "y": 0.85 }
+        }
+      ]
+    }
+  },
+  {
+    "id": "face_003",
+    "name": "Retro Pixel",
+    "description": "Old-school pixelated style digital face, perfect for nostalgia lovers.",
+    "previewImage": "https://cdn.example.com/previews/retro.png",
+    "faceDefinition": {
+      "backgroundColor": "#202020",
+      "elements": [
+        {
+          "type": "clock",
+          "format": "HH:mm:ss",
+          "font": "Courier New",
+          "color": "#00ff00",
+          "position": { "x": 0.5, "y": 0.45 },
+          "animation": "none"
+        },
+        {
+          "type": "text",
+          "value": "1984",
+          "font": "Courier New",
+          "color": "#00ff00",
+          "position": { "x": 0.5, "y": 0.7 }
+        }
+      ]
+    }
+  }
+]
