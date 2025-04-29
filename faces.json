@@ -1,26 +1,36 @@
 [
   {
     "id": "face_001",
-    "name": "Neon Clock",
-    "description": "A glowing neon digital clock with subtle pulsing effect.",
-    "previewImage": "https://cdn.example.com/previews/neon.png",
+    "name": "Neon Digital",
+    "description": "A glowing neon digital clock with subtle pulsing effect",
+    "previewImage": "https://example.com/previews/neon.png",
     "faceDefinition": {
+      "id": "face_001",
+      "name": "Neon Digital",
       "backgroundColor": "#000000",
       "elements": [
         {
+          "id": "clock_001",
           "type": "clock",
           "format": "HH:mm",
           "font": "monospace",
           "color": "#00ffff",
-          "position": { "x": 0.5, "y": 0.4 },
+          "position": {
+            "x": 0.5,
+            "y": 0.4
+          },
           "animation": "pulse"
         },
         {
+          "id": "text_001",
           "type": "text",
-          "value": "Neon",
+          "value": "NEON",
           "font": "Futura",
           "color": "#00ffff",
-          "position": { "x": 0.5, "y": 0.75 },
+          "position": {
+            "x": 0.5,
+            "y": 0.75
+          },
           "animation": "fade"
         }
       ]
@@ -29,27 +39,41 @@
   {
     "id": "face_002",
     "name": "Minimal Analog",
-    "description": "Elegant analog face with subtle motion and clean design.",
-    "previewImage": "https://cdn.example.com/previews/minimal.png",
+    "description": "Elegant analog face with clean design",
+    "previewImage": "https://example.com/previews/minimal.png",
     "faceDefinition": {
+      "id": "face_002",
+      "name": "Minimal Analog",
       "backgroundColor": "#111111",
       "elements": [
         {
+          "id": "analog_001",
           "type": "analogClock",
+          "position": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "center": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "radius": 100,
           "hands": {
             "hourColor": "#ffffff",
             "minuteColor": "#cccccc",
             "secondColor": "#ff0000"
-          },
-          "center": { "x": 0.5, "y": 0.5 },
-          "radius": 100
+          }
         },
         {
+          "id": "text_002",
           "type": "text",
-          "value": "Minimal",
+          "value": "MINIMAL",
           "font": "Helvetica Neue",
           "color": "#ffffff",
-          "position": { "x": 0.5, "y": 0.85 }
+          "position": {
+            "x": 0.5,
+            "y": 0.85
+          }
         }
       ]
     }
@@ -57,28 +81,73 @@
   {
     "id": "face_003",
     "name": "Retro Pixel",
-    "description": "Old-school pixelated style digital face, perfect for nostalgia lovers.",
-    "previewImage": "https://cdn.example.com/previews/retro.png",
+    "description": "Old-school pixelated style digital face",
+    "previewImage": "https://example.com/previews/retro.png",
     "faceDefinition": {
+      "id": "face_003",
+      "name": "Retro Pixel",
       "backgroundColor": "#202020",
       "elements": [
         {
+          "id": "clock_002",
           "type": "clock",
           "format": "HH:mm:ss",
           "font": "Courier New",
           "color": "#00ff00",
-          "position": { "x": 0.5, "y": 0.45 },
-          "animation": "none"
+          "position": {
+            "x": 0.5,
+            "y": 0.45
+          }
         },
         {
+          "id": "text_003",
           "type": "text",
           "value": "1984",
           "font": "Courier New",
           "color": "#00ff00",
-          "position": { "x": 0.5, "y": 0.7 }
+          "position": {
+            "x": 0.5,
+            "y": 0.7
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "face_004",
+    "name": "Image Clock",
+    "description": "Digital clock with background image",
+    "previewImage": "https://example.com/previews/image.png",
+    "faceDefinition": {
+      "id": "face_004",
+      "name": "Image Clock",
+      "backgroundColor": "#000000",
+      "elements": [
+        {
+          "id": "image_001",
+          "type": "image",
+          "source": "https://example.com/images/background.png",
+          "position": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "size": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        {
+          "id": "clock_003",
+          "type": "clock",
+          "format": "HH:mm",
+          "font": "Arial",
+          "color": "#ffffff",
+          "position": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       ]
     }
   }
-]
-
+] 
